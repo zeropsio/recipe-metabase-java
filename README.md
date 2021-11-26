@@ -1,5 +1,5 @@
-# metabase-for-zerops
-metabase install script for zerops
+# Metabase
+metabase install script for zerops (tempoary solution)
 
 ## Zerops import syntax
 
