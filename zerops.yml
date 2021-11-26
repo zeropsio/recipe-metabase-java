@@ -1,7 +1,7 @@
 use: [ ]
 # which commands to run to build
 run:
+  - curl https://downloads.metabase.com/v0.41.2/metabase.jar
   - chmod a+x start.sh
-  - exit 0
 # which files / folders to deploy after build
-deploy: [ . ]
+deploy: [ start.sh, metabase.jar ]
