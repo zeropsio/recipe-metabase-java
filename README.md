@@ -12,13 +12,15 @@ services:
   # Whether the service will be run on one or multiple containers.
   # Since this is a utility service, using only one container is fine.
   mode: NON_HA
-  # port on which our service will run, port 3000 is default for metabase
+  # Port on which our service will run, port 3000 is default for metabase
   ports:
       - port: 3000
-  # entry point for our application
+  # Entry point for our application
   startCommand: ./start.sh
   # Repository that contains adminer code with build and deploy instructions.
   buildFromGit: https://github.com/zeropsio/metabase-for-zerops@main
+  # Enable subdomain access
+  enableSubdomainAccess: true
 ```
 
 See the [Zerops documentation](https://docs.zerops.io/documentation/export-import/project-service-export-import.html) to understand how to use it.
