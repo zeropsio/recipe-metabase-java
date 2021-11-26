@@ -18,7 +18,7 @@ services:
   # Entry point for our application
   startCommand: ./start.sh
   # Repository that contains adminer code with build and deploy instructions.
-  buildFromGit: https://github.com/zeropsio/metabase-for-zerops@main
+  buildFromGit: https://github.com/zeropsio/recipe-metabase-java@main
   # Enable subdomain access
   enableSubdomainAccess: true
 ```
